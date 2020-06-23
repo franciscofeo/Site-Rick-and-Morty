@@ -1,0 +1,26 @@
+.optionList{
+    background-color: #262c3a;
+}
+
+.optionList ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 20px;
+}
+
+li{
+    margin-top: 20px;
+}
+
+li a{
+    color: #ffffff;
+    transition: all 1s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+li a:hover{
+    color: #2a0b4e;
+    background-color: white;
+}
+

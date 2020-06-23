@@ -1,0 +1,58 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+
+.bkgPage{
+    background-image: url(../img/bkg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+
+}
+
+.txtTitle p{
+    color: white;
+    font-size: 21px;
+    padding: 10px;
+}
+
+footer{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+.fa-heart{
+    color: red;
+    animation: heartAnim infinite 1s;
+}
+
+@keyframes heartAnim{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+.fa-github{
+    color: white;
+    transition: text-shadow 0.25s;
+}
+
+.fa-github:hover{
+    text-shadow: 0px 0px 3px white;
+}

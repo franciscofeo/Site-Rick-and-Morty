@@ -1,0 +1,20 @@
+form{
+    background-image: url(../img/bkg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: white;
+    padding: 15px;
+}
+
+.results{
+    text-align: justify;
+    padding: 5px;
+}
+
+.results img{
+    margin-top: 10px;
+    margin-left: 10%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
