@@ -44,3 +44,4 @@ function showData(name) {
     $sectionName.appendChild($listUl)
 
 }
+
