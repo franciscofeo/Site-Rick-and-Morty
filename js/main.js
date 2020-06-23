@@ -12,18 +12,26 @@ function searchChar() {
 function showData(name) {
     let $sectionName = document.querySelector('.resultsSection');
     let $listUl = document.querySelector('.charList');
+    let $footer = document.querySelector('.footer');
 
-    $listUl.innerHTML = ''
+    $listUl.innerHTML = '';
+
+
+    if (name.results.length > 1) {
+        $footer.style.position = 'static';
+    }
+
+
 
     for (var i = 0; i < name.results.length; i++) {
         let $charElement = document.createElement('li');
         $charElement.className = 'results'
 
         $charElement.innerHTML = `
-            <p><b>Name</b>: ${name.results[i].name}</p>
-            <p><b>Status</b>: ${name.results[i].status}</p>
-            <p><b>Origin</b>: ${name.results[i].origin.name}</p>
-            <p><b>Species</b>: ${name.results[i].species}</p>           
+            <p>Name: ${name.results[i].name}</p>
+            <p>Status: ${name.results[i].status}</p>
+            <p>Origin: ${name.results[i].origin.name}</p>
+            <p>Species: ${name.results[i].species}</p>           
             <img src="${name.results[i].image}">
 
         `

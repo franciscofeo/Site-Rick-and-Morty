@@ -16,22 +16,32 @@ a:link{
     background-image: url(../img/bkg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 89%;
     height: 100vh;
 
 }
 
 .txtTitle p{
     color: white;
-    font-size: 21px;
+    font-size: 18px;
     padding: 10px;
+
+    position: relative;
+    top: 30px;
 }
+
 
 footer{
     padding: 10px;
     color: white;
     text-align: center;
     background-color: black;
+    width: 100vw;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
 }
 
 .fa-heart{

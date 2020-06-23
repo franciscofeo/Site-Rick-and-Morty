@@ -1,20 +1,31 @@
 form{
-    background-image: url(../img/bkg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-color: #262c3a;
     color: white;
     padding: 15px;
+    text-align: center;
+}
+
+form input[type = text]{
+    width: 100px;
+    padding: 2px;
+}
+
+form button[type = submit]{
+    width: 45px;
 }
 
 .results{
-    text-align: justify;
+    color: white;
+    text-align: center;
     padding: 5px;
+    border-bottom: 1px solid rgba(92, 91, 91, 0.411);
 }
 
 .results img{
     margin-top: 10px;
     margin-left: 10%;
+    margin-bottom: 10px;
     border-radius: 15px;
     border: 1px solid black;
+    width: 200px;
 }
