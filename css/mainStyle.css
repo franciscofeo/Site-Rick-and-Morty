@@ -30,6 +30,41 @@ a:link{
     top: 30px;
 }
 
+.txtAbout{
+    height: 100vh;
+    background-image: url(../img/bkgAboutMe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
+
+.txtAbout p, .txtAbout h3{
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.txtAbout p a{
+    color: rgb(6, 252, 239);
+}
+
+.fa-envelope, .fa-github{
+    font-size: 30px;
+    color: white;
+    animation: envelopeMotion .7s infinite;
+}
+
+@keyframes envelopeMotion{
+    0%, 100%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+
+}
+
 
 footer{
     padding: 10px;
