@@ -10,10 +10,12 @@ function searchChar() {
 }
 
 function showData(name) {
+    let $inputName = document.getElementById('charName')
     let $sectionName = document.querySelector('.resultsSection');
     let $listUl = document.querySelector('.charList');
     let $footer = document.querySelector('.footer');
 
+    $inputName.value = '';
     $listUl.innerHTML = '';
 
 
