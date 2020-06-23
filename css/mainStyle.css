@@ -49,7 +49,7 @@ a:link{
     color: rgb(6, 252, 239);
 }
 
-.fa-envelope, .fa-github{
+.fa-envelope, .fa-github1{
     font-size: 30px;
     color: white;
     animation: envelopeMotion .7s infinite;
