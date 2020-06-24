@@ -5,12 +5,16 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
 }
 
 a:link{
     text-decoration: none;
 }
 
+p, li{
+    font-family: 'Roboto', sans-serif;
+}
 
 .bkgPage{
     background-image: url(../img/bkg.png);
@@ -25,6 +29,7 @@ a:link{
     color: white;
     font-size: 18px;
     padding: 10px;
+    text-shadow: 1px 1px 5px rgba(124, 16, 224, 0.692);
 
     position: relative;
     top: 30px;
@@ -46,11 +51,12 @@ a:link{
 }
 
 .txtAbout p a{
-    color: rgb(6, 252, 239);
+    color: rgb(243, 241, 241);
+    font-style: italic;
 }
 
 .fa-envelope, .fa-github1{
-    font-size: 30px;
+    font-size: 22px;
     color: white;
     animation: envelopeMotion .7s infinite;
 }
@@ -71,12 +77,12 @@ footer{
     color: white;
     text-align: center;
     background-color: black;
-    width: 100vw;
 }
 
 .footer{
     position: absolute;
     bottom: 0px;
+    width: 100vw;
 }
 
 .fa-heart{
@@ -100,4 +106,33 @@ footer{
 
 .fa-github:hover{
     text-shadow: 0px 0px 3px white;
+}
+
+/* MEDIAS QUERIES */
+
+@media(min-width: 620px){
+    .txtTitle p{
+
+        font-size: 22px;
+        width: 350px;
+        
+        position: relative;
+        left: 20px;
+    }
+    .txtAbout p{
+        font-size: 22px;
+    }
+}
+
+@media(min-width: 880px){
+    .txtTitle p{
+        font-size: 2em;
+        width: 600px;
+    }
+    .bkgPage{
+       height: 90vh;
+    }
+    .txtAbout{
+        height: 90vh;
+    }
 }

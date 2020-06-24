@@ -14,7 +14,7 @@ li{
 
 li a{
     color: #ffffff;
-    transition: all 1s;
+    transition: background-color .7s, color .7s;
     padding: 10px;
     border-radius: 10px;
 }
@@ -22,5 +22,13 @@ li a{
 li a:hover{
     color: #2a0b4e;
     background-color: white;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: 620px){
+    li a{
+        font-size: 20px
+    }
 }
 

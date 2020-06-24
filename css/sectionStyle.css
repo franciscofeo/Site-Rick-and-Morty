@@ -2,16 +2,20 @@ form{
     background-color: #262c3a;
     color: white;
     padding: 15px;
+    font-size: 14px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 form input[type = text]{
     width: 100px;
     padding: 2px;
+    border: 1px solid rgba(59, 235, 248, 0.5);
 }
 
 form button[type = submit]{
     width: 45px;
+    border: 1px solid rgb(128, 128, 243);
 }
 
 .results{
@@ -28,4 +32,23 @@ form button[type = submit]{
     border-radius: 15px;
     border: 1px solid black;
     width: 200px;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    .charList{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(min-width: 880px){
+    .charList{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }
